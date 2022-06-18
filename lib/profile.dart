@@ -8,11 +8,44 @@ class ProfileCard extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: CircleAvatar(
-            radius: 80,
-            backgroundImage: AssetImage(
-              'images/me.jpg',
-            ),
+          child: Column(
+            children: [
+              CircleAvatar(
+                radius: 80,
+                backgroundImage: AssetImage(
+                  'images/me.jpg',
+                ),
+              ),
+              Text(
+                'Natchapat Laotrakul',
+                style: Theme.of(context).textTheme.headline1,
+              ),
+              Text(
+                'Flutter Developer',
+                style: TextStyle(
+                  color: Colors.teal.shade900,
+                  fontSize: 20,
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.all(5),
+                padding: EdgeInsets.all(8),
+                color: Colors.white,
+                child: Row(
+                  children: [
+                    Icon(Icons.phone),
+                    SizedBox(width: 10),
+                    Text('0989889898'),
+                  ],
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: Icon(Icons.mail),
+                  title: Text('la.natvvbaha@gmail.com'),
+                ),
+              )
+            ],
           ),
         )
 
