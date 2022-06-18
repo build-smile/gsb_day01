@@ -9,6 +9,7 @@ class ProfileCard extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 80,
@@ -27,16 +28,10 @@ class ProfileCard extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
-              Container(
-                margin: EdgeInsets.all(5),
-                padding: EdgeInsets.all(8),
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(Icons.phone),
-                    SizedBox(width: 10),
-                    Text('0989889898'),
-                  ],
+              Card(
+                child: ListTile(
+                  leading: Icon(Icons.phone),
+                  title: Text('098-455-4433'),
                 ),
               ),
               Card(
@@ -44,6 +39,18 @@ class ProfileCard extends StatelessWidget {
                   leading: Icon(Icons.mail),
                   title: Text('la.natvvbaha@gmail.com'),
                 ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/counter', arguments: 3);
+                },
+                child: Text('Counter : 3'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/counter', arguments: 5);
+                },
+                child: Text('Counter : 5'),
               )
             ],
           ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gsb_day01/contactus.dart';
 import 'package:gsb_day01/profile.dart';
 import 'counter.dart';
 
@@ -12,6 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: {
+        '/profile': (context) => ProfileCard(),
+        '/counter': (context) => CounterScreen(),
+        '/contactus': (context) => ContactUsScreen()
+      },
       theme: ThemeData(
         textTheme: TextTheme(
           headline1: TextStyle(
