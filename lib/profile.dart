@@ -6,81 +6,89 @@ class ProfileCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: CircleAvatar(
+            radius: 80,
+            backgroundImage: AssetImage(
+              'images/me.jpg',
+            ),
+          ),
+        )
 
-      // body: Container(
-      //   width: double.infinity,
-      //
-      //   child: ListView(
-      //     children: [
-      //       Container(
-      //         child: ListTile(
-      //           leading: Icon(Icons.contact_mail),
-      //           title: Text('title'),
-      //           subtitle: Text('subtitle'),
-      //           trailing: Text('trailing'),
-      //         ),
-      //       ),
-      //       Container(
-      //         child: ListTile(
-      //           leading: Text('leading'),
-      //           title: Text('title'),
-      //           subtitle: Text('subtitle'),
-      //           trailing: Text('trailing'),
-      //         ),
-      //       ),
-      //       Container(
-      //         child: ListTile(
-      //           leading: Text('leading'),
-      //           title: Text('title'),
-      //           subtitle: Text('subtitle'),
-      //           trailing: Text('trailing'),
-      //         ),
-      //       ),
-      //       Container(
-      //         child: ListTile(
-      //           leading: Text('leading'),
-      //           title: Text('title'),
-      //           subtitle: Text('subtitle'),
-      //           trailing: Text('trailing'),
-      //         ),
-      //       ),
-      //       Container(
-      //         child: ListTile(
-      //           leading: Text('leading'),
-      //           title: Text('title'),
-      //           subtitle: Text('subtitle'),
-      //           trailing: Text('trailing'),
-      //         ),
-      //       ),
-      //     ],
-      //   ),
-      //   // child: Column(
-      //   //   mainAxisAlignment: MainAxisAlignment.start,
-      //   //   children: [
-      //   //     Expanded(
-      //   //       flex: 2,
-      //   //       child: Container(
-      //   //         width: 100,
-      //   //         color: Colors.blueAccent,
-      //   //       ),
-      //   //     ),
-      //   //     Expanded(
-      //   //       flex: 5,
-      //   //       child: Container(
-      //   //         width: 100,
-      //   //         color: Colors.red,
-      //   //       ),
-      //   //     ),
-      //   //     Expanded(
-      //   //       child: Container(
-      //   //         width: 100,
-      //   //         color: Colors.yellow,
-      //   //       ),
-      //   //     ),
-      //   //   ],
-      //   // ),
-      // ),
-    );
+        // body: Container(
+        //   width: double.infinity,
+        //
+        //   child: ListView(
+        //     children: [
+        //       Container(
+        //         child: ListTile(
+        //           leading: Icon(Icons.contact_mail),
+        //           title: Text('title'),
+        //           subtitle: Text('subtitle'),
+        //           trailing: Text('trailing'),
+        //         ),
+        //       ),
+        //       Container(
+        //         child: ListTile(
+        //           leading: Text('leading'),
+        //           title: Text('title'),
+        //           subtitle: Text('subtitle'),
+        //           trailing: Text('trailing'),
+        //         ),
+        //       ),
+        //       Container(
+        //         child: ListTile(
+        //           leading: Text('leading'),
+        //           title: Text('title'),
+        //           subtitle: Text('subtitle'),
+        //           trailing: Text('trailing'),
+        //         ),
+        //       ),
+        //       Container(
+        //         child: ListTile(
+        //           leading: Text('leading'),
+        //           title: Text('title'),
+        //           subtitle: Text('subtitle'),
+        //           trailing: Text('trailing'),
+        //         ),
+        //       ),
+        //       Container(
+        //         child: ListTile(
+        //           leading: Text('leading'),
+        //           title: Text('title'),
+        //           subtitle: Text('subtitle'),
+        //           trailing: Text('trailing'),
+        //         ),
+        //       ),
+        //     ],
+        //   ),
+        //   // child: Column(
+        //   //   mainAxisAlignment: MainAxisAlignment.start,
+        //   //   children: [
+        //   //     Expanded(
+        //   //       flex: 2,
+        //   //       child: Container(
+        //   //         width: 100,
+        //   //         color: Colors.blueAccent,
+        //   //       ),
+        //   //     ),
+        //   //     Expanded(
+        //   //       flex: 5,
+        //   //       child: Container(
+        //   //         width: 100,
+        //   //         color: Colors.red,
+        //   //       ),
+        //   //     ),
+        //   //     Expanded(
+        //   //       child: Container(
+        //   //         width: 100,
+        //   //         color: Colors.yellow,
+        //   //       ),
+        //   //     ),
+        //   //   ],
+        //   // ),
+        // ),
+        );
   }
 }
